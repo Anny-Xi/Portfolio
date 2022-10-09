@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1d1e22;
+}
+
+header {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    background-image: url(/img/background-totoro.jpg);
+    background-size: cover;
+    background-position: 0% 40%;
+}
+
+header div {
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #333;
+}
+
+nav a {
+    color: white;
+    flex: 1;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #333;
+    background-color: white;
+}
+
+main {
+    padding: 0.5em;
+    max-width: 65vw;
+    margin: 0 auto;
+}
+
+div.content {
+    background-color: white;
+    padding: 1em;
+    margin: 2em auto;
+}
+
+h2 {
+    margin: 0.5em auto;
+}
+
+div.div-2 {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+}
+
+div.div-3 {
+    margin: 1em auto;
+    padding: 0.5em;
+    width: 20vw;
+    background-color: #a0a6bc;
+}
+
+div#anime {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.626), rgba(255, 255, 255, 0.626)), url(/img/anime.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+div#comic {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.626), rgba(255, 255, 255, 0.626)), url(/img/comic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+div#game {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.626), rgba(255, 255, 255, 0.626)), url(/img/game.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+div#novel {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.626), rgba(255, 255, 255, 0.626)), url(/img/novel.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+div.div-3 h3 {
+    margin: 0.5em auto;
+}
+
+div.div-3 a,
+div.content a {
+    text-decoration: none;
+    color: #A92125;
+}
+
+div.div-3 a:hover,
+div.content a:hover {
+    color: #6a1618;
+}
+
+div.div-3 p.image {
+    margin: 0 auto;
+}
+
+div.div-3 p img {
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+}
+
+footer{
+    padding: 1vw 5vw 5vw 5vw ;
+    height: 20vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    background-image: url(/img/background-totoro.jpg);
+    background-size: cover;
+}
+
+div#socialMedia{
+    margin: 0 auto;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width:500px) {
+    header {
+        height: 30vh;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        max-width: 80vw;
+    }
+
+    div.div-2 {
+        flex-direction: column;
+    }
+
+    div.div-3 {
+        margin: 1em auto;
+        padding: 0.5em;
+        width: 75vw;
+    }
+
+    div.div-3 p img {
+        width: 50%;
+        height: 38vh;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:900px) {
+    header {
+        height: 30vh;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        max-width: 85vw;
+    }
+
+    div.content {
+        align-items: center;
+    }
+
+    div.div-2 {
+        flex-direction: column;
+    }
+
+    div.div-3 {
+        margin: 1em auto;
+        padding: 1em 0 0 0;
+        width: 55vw;
+        text-align: center;
+    }
+
+
+    div.div-3 p img {
+        width: 70%;
+        margin: 0 auto;
+        height: 38vh;
+        object-fit: cover;
+    }
+}
