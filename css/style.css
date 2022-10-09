@@ -13,7 +13,7 @@ header {
     font-size: 2em;
     color: white;
     font-weight: bold;
-    background-image: url('../img/background-totoro.jpg');
+    background-image: url(/Portfolio/img/background-totoro.jpg);
     background-size: cover;
     background-position: 0% 40%;
 }
@@ -86,7 +86,7 @@ div#comic {
 }
 
 div#game {
-    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.626), rgba(255, 255, 255, 0.626)), url(Portfolio/img/game.webp);
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.626), rgba(255, 255, 255, 0.626)), url(/Portfolio/img/game.webp);
     background-size: cover;
     background-position: center;
 }
