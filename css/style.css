@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     background-color: #1d1e22;
+    font-family: 'EB Garamond', serif;
 }
 
 header {
@@ -22,15 +25,17 @@ header div {
     margin: auto;
 }
 
+/* styling navbar */
 nav {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.404);
     position: sticky;
     top: 0px;
 }
 
+/* styling navbar link */
 nav a {
     color: white;
     flex: 1;
@@ -46,6 +51,7 @@ nav a:hover {
     background-color: white;
 }
 
+/* main styling */
 main {
     padding: 0.5em;
     max-width: 65vw;
@@ -62,19 +68,21 @@ h2 {
     margin: 0.5em auto;
 }
 
-div.div-2 {
+div.flex {
     display: flex;
     margin: 0 auto;
     padding: 0;
+    flex-direction: row;
 }
 
-div.div-3 {
+div.box {
     margin: 1em auto;
     padding: 0.5em;
-    width: 20vw;
+    width: 15vw;
     background-color: #a0a6bc;
 }
 
+/* style for each link to the acgn topic */
 div#anime {
     background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.626), rgba(255, 255, 255, 0.626)), url(../img/anime.jpg);
     background-size: cover;
@@ -99,48 +107,116 @@ div#novel {
     background-position: center;
 }
 
-div.div-3 h3 {
+div.box h3 {
     margin: 0.5em auto;
 }
 
-div.div-3 a,
+div.box a,
 div.content a {
     text-decoration: none;
     color: #A92125;
 }
 
-div.div-3 a:hover,
+div.box a:hover,
 div.content a:hover {
     color: #6a1618;
 }
 
-div.div-3 p.image {
+div.box p.image {
     margin: 0 auto;
 }
 
-div.div-3 p img {
+div.box p img {
     width: 100%;
-    height: 65vh;
     object-fit: cover;
 }
 
-footer{
-    padding: 1vw 5vw 5vw 5vw ;
-    height: 20vh;
+div#contactform {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.171), rgba(255, 255, 255, 0.626)), url(https://media.timeout.com/images/105742095/image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* styling for form */
+#form {
+    width: 30vw;
+    padding: 2em;
+    margin: 0 auto;
+
+}
+
+.formfield {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1% 5%;
+    font-weight: bold;
+}
+
+input {
+    font-size: 1em;
+    border: none;
+    background-color: #5f616998;
+}
+
+input[type=text] {
+    padding: 2px;
+    font-size: 1em;
+}
+
+select {
+    padding: 6px;
+    font-size: 1em;
+    border: 0;
+}
+
+textarea {
+    border: none;
+    background-color: #5f616998;
+    width: 20vw;
+    height: 10vh;
+}
+
+/* styling for form button */
+button {
+    margin: 5px 0px 2px 22vw;
+    padding: 5px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    background-color: rgb(6, 143, 90);
+    color: white;
+
+}
+
+button:hover {
+    background-color: rgb(173, 209, 106);
+    color: rgb(0, 0, 0);
+}
+
+button:active {
+    background-color: rgb(64, 45, 133);
+}
+
+/* styling for footer */
+footer {
+    padding: 1vw 5vw 5vw 5vw;
+    height: 10vh;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     color: white;
     font-weight: bold;
-    background-image: url(../img/background-totoro.jpg);
+    background-image: url(https://mymodernmet.com/wp/wp-content/uploads/2021/01/studio-ghibli-history-7.jpg);
     background-size: cover;
 }
 
-div#socialMedia{
+div#socialMedia {
     margin: 0 auto;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: white;
 }
@@ -156,38 +232,88 @@ footer a{
     }
 
     nav {
+        display: flex;
+        justify-content: space-between;
         flex-direction: column;
+        position: sticky;
+        top: 0px;
+    }
+
+    nav a {
+        flex: 1;
+        font-size: 1em;
+        padding: 15px;
+        font-size: 1em;
     }
 
     main {
         max-width: 80vw;
     }
 
-    div.div-2 {
+    /* styling for box and img */
+    div.flex {
         flex-direction: column;
     }
-
-    div.div-3 {
-        margin: 1em auto;
-        padding: 0.5em;
-        width: 75vw;
+    div.box{
+        width: 60vw;
+        height: 100%;
+    }
+    
+    div.box p.image {
+        margin: 0 auto;
+    }
+    
+    div.box p img {
+        object-fit: cover;
+        width: 70%;
+        height: 100%;
     }
 
-    div.div-3 p img {
-        width: 50%;
-        height: 38vh;
-        object-fit: cover;
+
+    /* styling for form */
+    #form {
+        width: 70vw;
+        margin: 0 auto;
+
+    }
+
+
+    textarea {
+        width: 35vw;
+        height: 10vh;
+    }
+
+    textarea {
+        border: none;
+        background-color: #5f616998;
+        width: 50vw;
+        height: 10vh;
+    }
+
+    /* styling for form button */
+    button {
+        margin: 5px 0px 2px 20vw;
+    }
+
+    button:hover {
+        background-color: rgb(173, 209, 106);
+        color: rgb(0, 0, 0);
+    }
+
+    button:active {
+        background-color: rgb(64, 45, 133);
     }
 }
 
-@media (max-width:900px) {
+/* for ipad and other surface */
+@media (max-width:1300px) {
     header {
         height: 30vh;
         text-align: center;
     }
 
-    nav {
-        flex-direction: column;
+    nav a {
+        font-size: 1.1em;
     }
 
     main {
@@ -198,22 +324,16 @@ footer a{
         align-items: center;
     }
 
-    div.div-2 {
-        flex-direction: column;
-    }
-
-    div.div-3 {
-        margin: 1em auto;
-        padding: 1em 0 0 0;
-        width: 55vw;
+    /* styling for box and img  */
+    div.box {
         text-align: center;
     }
 
-
-    div.div-3 p img {
-        width: 70%;
+    div.box p img {
         margin: 0 auto;
-        height: 38vh;
-        object-fit: cover;
     }
+    .formfield {
+        flex-direction: column;
+    }
+
 }
