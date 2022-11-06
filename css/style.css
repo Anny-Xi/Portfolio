@@ -265,7 +265,7 @@ footer a {
     
     div.box p img {
         object-fit: cover;
-        width: 70%;
+        width: 70vw;
         height: 100%;
     }
 
