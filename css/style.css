@@ -82,7 +82,7 @@ div.box {
     background-color: #a0a6bc;
 }
 
-img#annyPhoto{
+img#annyPhoto {
     margin: 0 auto;
     border-radius: 50%;
     width: 35vh;
@@ -93,9 +93,101 @@ img#annyPhoto{
     border-width: thick;
 }
 
-div.box h3 {
-    margin: 0.5em auto;
+/* Container for skill bars */
+.skills_container {
+    width: 100%;
+    /* Full width */
+    background-color: #ddd;
+    /* Grey background */
 }
+
+.skills {
+    text-align: right;
+    /* Right-align text */
+    padding-top: 10px;
+    /* Add top padding */
+    padding-bottom: 10px;
+    /* Add bottom padding */
+    color: white;
+    /* White text color */
+}
+
+.html {
+    width: 80%;
+    background-color: #0c0e0d;
+}
+
+.css {
+    width: 80%;
+    background-color: #0c0e0d;
+}
+
+.js {
+    width: 50%;
+    background-color: #0c0e0d;
+}
+
+.php {
+    width: 70%;
+    background-color: #0c0e0d;
+}
+
+#projectGallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.project_img {
+    width: 20.5vw;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.project_img:hover .overlay {
+    opacity: 1;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    overflow: hidden;
+    width: 20.5vw;
+    height: 0;
+    transition: .5s ease;
+}
+
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 4em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
+
+
+
 
 div.box a,
 div.content a {
@@ -108,13 +200,47 @@ div.content a:hover {
     color: #6a1618;
 }
 
-div.box p.image {
-    margin: 0 auto;
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
-div.box p img {
-    width: 100%;
-    object-fit: cover;
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 div#contactform {
@@ -195,7 +321,7 @@ footer {
     color: white;
     font-weight: bold;
     background-image: url(https://mymodernmet.com/wp/wp-content/uploads/2021/01/studio-ghibli-history-7.jpg);
-    background-size:cover;
+    background-size: cover;
 }
 
 div#socialMedia {
@@ -240,15 +366,16 @@ footer a {
     div.flex {
         flex-direction: column;
     }
-    div.box{
+
+    div.box {
         width: 60vw;
         height: 100%;
     }
-    
+
     div.box p.image {
         margin: 0 auto;
     }
-    
+
     div.box p img {
         object-fit: cover;
         width: 70vw;
@@ -318,6 +445,7 @@ footer a {
     div.box p img {
         margin: 0 auto;
     }
+
     .formfield {
         flex-direction: column;
     }
