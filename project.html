@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,112 +11,58 @@
 </head>
 
 <body>
-    <!-- <chat><div><a href="contact.html">Klik hier om vraag te stellen</a></div> </chat> -->
     <header>
         <div>
             <h1>Anny's Portfolio</h1>
         </div>
     </header>
+    <!-- menu nav bar -->
     <nav>
         <a href="index.html#top">Home</a>
         <a href="index.html#me">Wie ben ik</a>
+        <a href="index.html#interesse">Mijn interesse</a>
         <a href="index.html#skills">Mijn Skills</a>
         <a href="index.html#project">Project</a>
         <a href="contact.html">Contact</a>
     </nav>
+
     <main>
-        <!--  about me -->
-        <div class="content">
-            <a name="ME"></a>
-            <h2> Wie ben ik? </h2>
-            <div class="description" id="ik">
-                <img id="annyPhoto" name="annyPhoto" alt="annyPhoto" src="img/selfie.jpg">
-                <p>
-                    Mijn naam is <b>Anny Xi</b>, ik ben geboren in 2000.<br> Momenteel volg ik de opleiding<b>Creative
-                        media and Game technologie </b> op de Hogeschool Rotterdam. <br> Ik bevind me nog in de
-                    ontdekkingsfase van mijn interesses binnen het brede vakgebied van ICT en de game-industrie.
-                    Gedurende de komende jaren van mijn studie zal ik mijn best doen om mijn passie te vinden. Ik hoop
-                    dat ik deze snel zal ontdekken.
-                </p>
-            </div>
-        </div>
-
-        <!-- Section about my skills -->
-
-        <div class="content" id="skills">
-            <h2> Mijn Skills </h2>
-            <p>HTML</p>
-            <div class="skills_container">
-                <div class="skills html">80%</div>
-            </div>
-
-            <p>CSS</p>
-            <div class="skills_container">
-                <div class="skills css">80%</div>
-            </div>
-
-            <p>JavaScript</p>
-            <div class="skills_container">
-                <div class="skills js">50%</div>
-            </div>
-
-            <p>PHP</p>
-            <div class="skills_container">
-                <div class="skills php">70%</div>
-            </div>
-        </div>
-
-        <!-- Section my project -->
-        <div class="content" id="project">
-            <h2>Mijn project</h2>
-            <p>Dit zijn mijn favorite project</p>
-
-
-            <div id="projectGallery">
-
-                <div id="projectLink">
-                    <div class="container">
-                        <a href="project.html#catfeeder">
-                            <img class="project_img" src="img/1_CLE1_poster.jpg" alt="CLE 1">
-                            <div class="overlay">
-                                <div class="text">Project cat feeder</div>
-                            </div>
-                        </a>
+        <div class="content" id="contactform">
+            <section id="form">
+                <h3> Contact formulier</h3>
+                <!-- form -->
+                <form action="contact-thanks.html">
+                    <div class="formfield">
+                        <label for="name">Naam:</label>
+                        <input type="text" name="name" id="name" required>
                     </div>
-                </div>
 
-                <div id="projectLink">
-                    <div class="container">
-                        <a href="project.html#1943">
-                            <img class="project_img" src="img/1_CLE4_poster_2.jpg" alt="CLE 1">
-                            <div class="overlay">
-                                <div class="text">Project Puzzel 1943</div>
-                            </div>
-                        </a>
+                    <div class="formfield">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
                     </div>
-                </div>
 
-                <div id="projectLink">
-                    <div class="container">
-                        <a href="project.html">
-                            <img class="project_img" src="img/1_CLEX_poster.jpg" alt="CLE 1">
-                            <div class="overlay">
-                                <div class="text">Bekijk meer projecten</div>
-                            </div>
-                        </a>
+                    <div class="formfield">
+                        <label for="topic">Onderwerp</label>
+                        <select id="topic" name="topic">
+                            <option selected disabled value="none">Kies een onderwerp</option>
+                            <option value="vraag">Vraag</option>
+                            <option value="opmerking">Opmerking</option>
+                            <option value="overig">Overig</option>
+                        </select>
                     </div>
-                </div>
 
-            </div>
+                    <div class="formfield">
+                        <label for="message">Bericht:</label>
+                        <textarea required></textarea>
+                    </div>
 
-
-            <!-- terug naar interesse kop  -->
-            <a href="#interesse">Terug naar interesse</a>
+                    <button type="submit">Versturen</button>
+                </form>
+            </section>
         </div>
-
-
-
     </main>
+
     <!-- Section for my contact -->
     <footer>
         <h2> Contact </h2>
@@ -150,8 +96,6 @@
         </div>
         <a href="#top">Back to top</a>
     </footer>>
-
-
 </body>
 
 </html>
